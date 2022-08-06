@@ -1,3 +1,4 @@
+import MainFooter from './Footer';
 import MainHeader from './Header';
 
 const CommonLayout = ({
@@ -9,7 +10,7 @@ const CommonLayout = ({
 		<>
 			<MainHeader />
 			{children}
-			<footer></footer>
+			<MainFooter />
 		</>
 	);
 };
