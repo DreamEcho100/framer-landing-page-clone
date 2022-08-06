@@ -1,0 +1,2 @@
+export const pageWhiteIconUrl =
+	'data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2012%2018%22%3E%3Cpath%20d%3D%22M%2012%200%20L%2012%206%20L%206%206%20L%200%200%20Z%20M%200%206%20L%206%206%20L%2012%2012%20L%206%2012%20L%206%2018%20L%200%2012%20Z%22%20fill%3D%22hsl(0%2C%200%25%2C%20100%25)%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E';
