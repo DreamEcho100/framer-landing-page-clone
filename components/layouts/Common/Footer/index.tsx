@@ -1,3 +1,4 @@
+import CustomNextImage from '@components/common/CustomNextImage';
 import {
 	discordWhiteIconUrl,
 	dribbleWhiteIconUrl,
@@ -88,7 +89,13 @@ const MainFooter = () => {
 			<div className='flex items-start justify-between max-w-[1000px] mx-auto flex-wrap md:flex-nowrap '>
 				<div className='m-6'>
 					<a href='#'>
-						<img className='w-6 h-6' src={pageWhiteIconUrl} alt='' />
+						<CustomNextImage
+							width={24}
+							height={24}
+							className='w-6 h-6'
+							src={pageWhiteIconUrl}
+							alt=''
+						/>
 					</a>
 				</div>
 				{generalLinks.map((item) => (
@@ -129,7 +136,13 @@ const MainFooter = () => {
 							{socialLinks.map((listItem) => (
 								<li key={listItem.iconUrl} className='m-2'>
 									<a href={listItem.href}>
-										<img className='w-6 h-6' src={listItem.iconUrl} alt='' />
+										<CustomNextImage
+											width={24}
+											height={24}
+											className='w-6 h-6'
+											src={listItem.iconUrl}
+											alt=''
+										/>
 									</a>
 								</li>
 							))}

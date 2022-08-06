@@ -1,3 +1,4 @@
+import CustomNextImage from '@components/common/CustomNextImage';
 import classes from './index.module.css';
 const imagesLists = [
 	[
@@ -309,7 +310,13 @@ const HeroSection = () => {
 					>
 						{images.map((image) => (
 							<li key={image.src} className='w-80 md:w-96 lg:w-[32rem]'>
-								<img className='w-full ' src={image.src} alt={image.alt} />
+								<CustomNextImage
+									width={512}
+									height={320}
+									className='w-full '
+									src={image.src}
+									alt={image.alt}
+								/>
 							</li>
 						))}
 					</ul>

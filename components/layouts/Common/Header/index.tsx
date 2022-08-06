@@ -1,6 +1,7 @@
 import classes from './index.module.css';
 import { useState } from 'react';
 import { pageWhiteIconUrl } from '@data/index';
+import CustomNextImage from '@components/common/CustomNextImage';
 
 const mainHeaderData = {
 	logo: {
@@ -113,7 +114,13 @@ const MainHeader = () => {
 		<header className='relative bg-black text-white w-full text-lg font-bold h-16'>
 			<div className='w-full h-full max-w-[1400px] mx-auto flex justify-between items-center px-4'>
 				<div className='bg-zinc-700 px-4 py-1 rounded-lg flex justify-between items-center'>
-					<img className='w-4 h-4' src={mainHeaderData.logo.iconUrl} alt='' />
+					<CustomNextImage
+						width={16}
+						height={16}
+						className='w-4 h-4'
+						src={mainHeaderData.logo.iconUrl}
+						alt=''
+					/>
 					<span className='px-1' />
 					<a href={mainHeaderData.logo.href}>{mainHeaderData.logo.text}</a>
 				</div>
