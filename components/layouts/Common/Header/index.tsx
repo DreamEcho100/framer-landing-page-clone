@@ -111,7 +111,7 @@ const MainHeader = () => {
 		useState(false);
 
 	return (
-		<header className='relative bg-black text-white w-full text-lg font-bold h-16'>
+		<header className='z-10 relative bg-black text-white w-full text-lg font-bold h-16'>
 			<div className='w-full h-full max-w-[1400px] mx-auto flex justify-between items-center px-4'>
 				<div className='bg-zinc-700 px-4 py-1 rounded-lg flex justify-between items-center'>
 					<CustomNextImage
