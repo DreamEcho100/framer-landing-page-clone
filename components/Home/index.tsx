@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import CommonLayout from '../layouts/Common';
+import HeroSection from './Hero';
 
 const Home = () => {
 	return (
@@ -12,7 +13,9 @@ const Home = () => {
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<main>Home</main>
+			<main className='w-full'>
+				<HeroSection />
+			</main>
 		</CommonLayout>
 	);
 };

@@ -1,0 +1,8 @@
+/* .form-conatiner:hover .form-input-controller:not(:hover,:focus,.noNothoverAnimation) */
+
+.listOfImages img {
+	filter: brightness(0.75);
+}
+.listOfImages:hover img:hover {
+	filter: brightness(0.9);
+}
