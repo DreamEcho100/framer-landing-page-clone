@@ -1,4 +1,5 @@
-import CustomNextImage from '@components/common/CustomNextImage';
+import CustomNextImage from '@components/Home/components/CustomNextImage';
+import SectionHeader from '@components/core/SectionHeader';
 import {
 	addRoundedGrayBg,
 	dataBaseRoundedGrayBg,
@@ -13,10 +14,14 @@ import {
 	UpCurvedLTRArrow,
 } from '@data/index';
 import React, { Fragment } from 'react';
+import ShowCaseExample from '@components/Home/components/ShowCaseExample';
 
-type Props = {};
+const linearGradient =
+	'linear-gradient(301deg, rgb(0, 204, 255) 0%, rgb(0, 136, 255) 100%)';
+const linearGradient2 =
+	'linear-gradient(315deg, rgb(7, 222, 255) 0%, rgb(15, 151, 255) 100%)';
 
-const DesignPublishDoneSection = (props: Props) => {
+const DesignPublishDoneSection = () => {
 	return (
 		<section
 			className='w-full'
@@ -25,25 +30,22 @@ const DesignPublishDoneSection = (props: Props) => {
 					'linear-gradient(180deg, rgb(0, 5, 25), rgb(19 63 160)',
 			}}
 		>
-			<div className='text-white font-bold px-20 pt-40 flex flex-col items-center justify-center text-center'>
-				<h2 style={{ color: 'rgb(0, 173, 255)' }} className='text-6xl'>
-					Design, publish, done.
-				</h2>
-				<p className='mt-8 text-3xl max-w-[2000px]'>
-					Framer&apos;s canvas is incredible for web design. Create web pages
-					with text, links, media, and animations—no code needed. Ready to ship?
-					Publish your site with a single click.
-				</p>
-				<button
-					style={{
-						backgroundImage:
-							'linear-gradient(45deg, rgb(15, 153, 255), rgb(7, 220, 255))',
-					}}
-					className='mt-8 text-2xl px-6 py-3 rounded-lg'
-				>
-					Watch beginner tutorial
-				</button>
-			</div>
+			<div className='pt-40'></div>
+			<SectionHeader
+				className='text-white'
+				h2={{
+					text: 'Design, publish, done.',
+					linearGradient,
+				}}
+				p={{
+					text: "Framer's canvas is incredible for web design. Create web pages with text, links, media, and animations—no code needed. Ready to ship? Publish your site with a single click.",
+				}}
+				button={{
+					href: '#',
+					linearGradient: linearGradient2,
+					text: 'Watch beginner tutorial',
+				}}
+			/>
 			<div className='w-full overflow-hidden'>
 				<div className='w-[200%] min-w-[1600px] mt-24 flex items-center justify-center -translate-x-1/3 md:-translate-x-1/4 m-auto relative'>
 					<span className='w-20 h-6 absolute top-0 left-1/2 translate-x-1/2 -translate-y-1/2'>
@@ -133,6 +135,7 @@ const DesignPublishDoneSection = (props: Props) => {
 													alt={item.alt}
 													width={20}
 													height={20}
+													className='rounded-md'
 												/>
 											</span>
 
@@ -237,39 +240,3 @@ const DesignPublishDoneSection = (props: Props) => {
 };
 
 export default DesignPublishDoneSection;
-
-interface IShowCaseExampleProps {
-	img: { src: string; alt: string; width: number; height: number };
-}
-const ShowCaseExample = ({ img }: IShowCaseExampleProps) => {
-	return (
-		<div>
-			<header className='flex items-center justify-between px-2 h-10 bg-gray-300 text-gray-400 font-bold'>
-				<div className='flex items-center justify-between'>
-					<button className='flex items-center justify-between'>
-						<StartWhiteIcon />
-					</button>
-					<span className='px-1' />
-					<span>Desktop · 1000</span>
-				</div>
-				<div className='flex items-center justify-between'>
-					<span>Breakpoint</span>
-					<span className='px-1' />
-					<button className='flex items-center justify-between'>
-						<PlusWhiteIcon />
-					</button>
-				</div>
-			</header>
-			<div>
-				<CustomNextImage
-					src={img.src}
-					width={img.width}
-					height={img.height}
-					alt={img.alt}
-					// className={`w-[${img.width}px] h-[${img.height}px]`}
-					style={{ width: img.width, height: img.height }}
-				/>
-			</div>
-		</div>
-	);
-};

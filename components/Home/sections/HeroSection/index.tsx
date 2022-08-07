@@ -1,4 +1,4 @@
-import CustomNextImage from '@components/common/CustomNextImage';
+import CustomNextImage from '@components/Home/components/CustomNextImage';
 import classes from './index.module.css';
 const imagesLists = [
 	[

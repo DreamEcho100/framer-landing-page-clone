@@ -1,36 +1,31 @@
-import CustomNextImage from '@components/common/CustomNextImage';
+import CustomNextImage from '@components/Home/components/CustomNextImage';
+import SectionHeader from '@components/core/SectionHeader';
 import classes from './index.module.css';
 
 type Props = {};
 
-const linearGradient = 'linear-gradient(to bottom right, #ffa607, #ff07e3)';
+const linearGradient =
+	'linear-gradient(315deg, rgb(255, 0, 238) 0%, rgb(255, 170, 0) 100%)';
+const linearGradient2 =
+	'linear-gradient(315deg, rgb(255, 0, 238) 0%, rgb(255, 170, 0) 100%)';
 
 const TopNotchTemplatesSection = (props: Props) => {
 	return (
-		<div>
-			<div className='w-full px-8 py-16 flex flex-col items-center justify-center text-center font-medium'>
-				<h2
-					style={{
-						backgroundImage: linearGradient,
-						backgroundClip: 'text',
-						WebkitBackgroundClip: 'text',
-						WebkitTextFillColor: 'transparent',
-					}}
-					className='text-8xl'
-				>
-					Top-notch templates.
-				</h2>
-				<p className='my-8 text-4xl max-w-[800px]'>
-					Browse dozens of professionally designed templates. Easily change
-					structure, style, and graphics—then publish instantly.
-				</p>
-				<button
-					className='text-4xl px-6 py-4 rounded-lg text-white font-bold'
-					style={{ backgroundImage: linearGradient }}
-				>
-					View all templates
-				</button>
-			</div>
+		<section>
+			<SectionHeader
+				h2={{
+					text: 'Top-notch templates.',
+					linearGradient,
+				}}
+				p={{
+					text: 'Browse dozens of professionally designed templates. Easily change structure, style, and graphics—then publish instantly.',
+				}}
+				button={{
+					href: '#',
+					linearGradient: linearGradient2,
+					text: 'View all templates',
+				}}
+			/>
 			<div className='flex flex-wrap items-center justify-center md:justify-evenly'>
 				{[
 					{
@@ -129,7 +124,7 @@ const TopNotchTemplatesSection = (props: Props) => {
 				))}
 				;
 			</div>
-		</div>
+		</section>
 	);
 };
 

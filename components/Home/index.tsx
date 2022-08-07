@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import CommonLayout from '../layouts/Common';
-import DesignPublishDoneSection from './DesignPublishDoneSection';
-import HeroSection from './HeroSection';
-import TopNotchTemplatesSection from './TopNotchTemplatesSection';
+import DesignPublishDoneSection from './sections/DesignPublishDoneSection';
+import HeroSection from './sections/HeroSection';
+import TopNotchTemplatesSection from './sections/TopNotchTemplatesSection';
+import ItIsLikeMagicSection from './sections/ItIsLikeMagicSection';
+import StartForFree from './sections/StartForFree';
 
 const Home = () => {
 	return (
@@ -19,6 +21,8 @@ const Home = () => {
 				<HeroSection />
 				<DesignPublishDoneSection />
 				<TopNotchTemplatesSection />
+				<ItIsLikeMagicSection />
+				<StartForFree />
 			</main>
 		</CommonLayout>
 	);

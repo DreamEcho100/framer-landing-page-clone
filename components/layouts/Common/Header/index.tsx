@@ -1,7 +1,7 @@
 import classes from './index.module.css';
 import { useState } from 'react';
 import { pageWhiteIconUrl } from '@data/index';
-import CustomNextImage from '@components/common/CustomNextImage';
+import CustomNextImage from '@components/Home/components/CustomNextImage';
 
 const mainHeaderData = {
 	logo: {
