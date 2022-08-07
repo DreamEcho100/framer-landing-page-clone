@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import CommonLayout from '../layouts/Common';
 import DesignPublishDoneSection from './DesignPublishDoneSection';
-import HeroSection from './Hero';
+import HeroSection from './HeroSection';
 
 const Home = () => {
 	return (
