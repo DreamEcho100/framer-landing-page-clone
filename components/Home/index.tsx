@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import CommonLayout from '../layouts/Common';
+import DesignPublishDoneSection from './DesignPublishDoneSection';
 import HeroSection from './Hero';
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
 			</Head>
 			<main className='w-full'>
 				<HeroSection />
+				<DesignPublishDoneSection />
 			</main>
 		</CommonLayout>
 	);

@@ -197,7 +197,7 @@ const MainHeader = () => {
 					<ul className='flex flex-col justify-between'>
 						{mainHeaderData.nav.map((item) => {
 							if (item.__type === 'DROP_DOWN_LIST')
-								return <SubMenuOnSmallerScreens item={item} />;
+								return <SubMenuOnSmallerScreens item={item} key={item.entry} />;
 
 							return (
 								<li

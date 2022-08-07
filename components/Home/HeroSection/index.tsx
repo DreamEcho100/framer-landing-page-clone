@@ -301,7 +301,7 @@ const imagesLists = [
 // #00071e
 const HeroSection = () => {
 	return (
-		<section className='min-w-full overflow-hidden min-h-screen relative flex items-center justify-center'>
+		<section className='min-w-full overflow-hidden h-[75vh] max-h-[1400px] relative flex'>
 			<div className='absolute top-0 left-0 min-w-full'>
 				{imagesLists.map((images, imagesIndex) => (
 					<ul
@@ -323,24 +323,23 @@ const HeroSection = () => {
 				))}
 			</div>
 			<div
-				className='absolute top-0 left-0 min-w-full min-h-full pointer-events-none'
+				className='relative z-[2] px-4 py-8 mx-auto w-fit text-center font-bold text-white overflow-hidden flex flex-col items-center justify-end select-none min-w-full min-h-full pointer-events-none'
 				style={{
 					backgroundImage:
 						'linear-gradient(0deg, rgb(0, 7, 30), rgb(0, 7, 30, 0.2))',
 				}}
-			></div>
-			<div className='relative z-[2] p-4 mx-auto w-fit text-center font-bold text-white overflow-hidden flex flex-col items-center justify-center select-none'>
-				<h1 className='text-6xl'>Ship sites with style.</h1>
-				<p className='text-2xl md:w-2/3 my-6'>
+			>
+				<h1 className='text-8xl'>Ship sites with style.</h1>
+				<p className='text-4xl md:w-2/3 my-6'>
 					Easily go from design to world-class site with Framer, the web builder
 					for creative pros.
 				</p>
-				<div className='w-full'>
-					<button className='text-xl bg-img-special-1 px-4 py-2 rounded-lg'>
+				<div className='w-full pointer-events-auto'>
+					<button className='text-2xl bg-img-special-1 px-6 py-3 rounded-lg'>
 						Start for free
 					</button>
 					<span className='mx-2'></span>
-					<button className='text-xl bg-slate-200 text-black px-4 py-2 rounded-lg'>
+					<button className='text-2xl bg-slate-200 text-black px-6 py-3 rounded-lg'>
 						Browse sites
 					</button>
 				</div>
