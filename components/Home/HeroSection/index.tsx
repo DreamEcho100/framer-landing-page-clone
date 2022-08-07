@@ -329,17 +329,17 @@ const HeroSection = () => {
 						'linear-gradient(0deg, rgb(0, 7, 30), rgb(0, 7, 30, 0.2))',
 				}}
 			>
-				<h1 className='text-8xl'>Ship sites with style.</h1>
-				<p className='text-4xl md:w-2/3 my-6'>
+				<h1 className='text-7xl md:text-8xl'>Ship sites with style.</h1>
+				<p className='text-3xl md:text-4xl md:w-2/3 my-6'>
 					Easily go from design to world-class site with Framer, the web builder
 					for creative pros.
 				</p>
-				<div className='w-full pointer-events-auto'>
-					<button className='text-2xl bg-img-special-1 px-6 py-3 rounded-lg'>
+				<div className='w-full flex items-center justify-center flex-col md:flex-row'>
+					<button className='text-xl md:text-2xl my-2 pointer-events-auto bg-img-special-1 px-6 py-3 rounded-lg'>
 						Start for free
 					</button>
-					<span className='mx-2'></span>
-					<button className='text-2xl bg-slate-200 text-black px-6 py-3 rounded-lg'>
+					<span className='mx-2 hidden md:flex' />
+					<button className='text-xl md:text-2xl my-2 pointer-events-auto bg-slate-200 text-black px-6 py-3 rounded-lg'>
 						Browse sites
 					</button>
 				</div>

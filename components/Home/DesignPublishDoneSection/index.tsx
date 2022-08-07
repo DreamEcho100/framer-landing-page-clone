@@ -25,7 +25,7 @@ const DesignPublishDoneSection = (props: Props) => {
 					'linear-gradient(180deg, rgb(0, 5, 25), rgb(19 63 160)',
 			}}
 		>
-			<div className='text-white font-bold px-20 pt-80 flex flex-col items-center justify-center text-center'>
+			<div className='text-white font-bold px-20 pt-40 flex flex-col items-center justify-center text-center'>
 				<h2 style={{ color: 'rgb(0, 173, 255)' }} className='text-6xl'>
 					Design, publish, done.
 				</h2>
