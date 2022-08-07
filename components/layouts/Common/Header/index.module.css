@@ -14,7 +14,9 @@
   d
 } */
 .navOnHoverContainer:hover .navOnHover,
-.navOnHover:hover {
+.navOnHover:hover,
+/* .navOnHoverContainer > button:focus .navOnHover, */
+.navOnHoverContainer:focus-within .navOnHover {
 	opacity: 1;
 	transform: translateY(0%);
 	transition: transform 0.4s ease-in, opacity 1s ease-in;
