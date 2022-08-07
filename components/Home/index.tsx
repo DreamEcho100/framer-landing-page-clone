@@ -2,6 +2,7 @@ import Head from 'next/head';
 import CommonLayout from '../layouts/Common';
 import DesignPublishDoneSection from './DesignPublishDoneSection';
 import HeroSection from './HeroSection';
+import TopNotchTemplatesSection from './TopNotchTemplatesSection';
 
 const Home = () => {
 	return (
@@ -17,6 +18,7 @@ const Home = () => {
 			<main className='w-full'>
 				<HeroSection />
 				<DesignPublishDoneSection />
+				<TopNotchTemplatesSection />
 			</main>
 		</CommonLayout>
 	);
