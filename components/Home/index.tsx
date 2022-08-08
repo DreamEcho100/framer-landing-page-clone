@@ -5,6 +5,7 @@ import HeroSection from './sections/HeroSection';
 import TopNotchTemplatesSection from './sections/TopNotchTemplatesSection';
 import ItIsLikeMagicSection from './sections/ItIsLikeMagicSection';
 import StartForFree from './sections/StartForFree';
+import SimplyPowerfulSection from './sections/SimplyPowerful';
 
 const Home = () => {
 	return (
@@ -22,6 +23,7 @@ const Home = () => {
 				<DesignPublishDoneSection />
 				<TopNotchTemplatesSection />
 				<ItIsLikeMagicSection />
+				<SimplyPowerfulSection />
 				<StartForFree />
 			</main>
 		</CommonLayout>

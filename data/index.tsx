@@ -42,6 +42,9 @@ export const settingsBlack =
 export const startBlack =
 	'data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20d%3D%22M%206.272%202.863%20C%205.272%202.263%204%202.983%204%204.149%20L%204%2013.851%20C%204%2015.017%205.272%2015.737%206.272%2015.137%20L%2014.356%2010.286%20C%2015.327%209.704%2015.327%208.296%2014.356%207.714%20Z%22%20fill%3D%22%23222222%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E';
 
+export const upLeftWhiteTriangle =
+	'data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20d%3D%22M%201.638%204.955%20C%201.08%203.183%202.742%201.513%204.516%202.063%20L%2035.958%2011.811%20C%2037.618%2012.325%2038.132%2014.422%2036.898%2015.645%20L%2015.282%2037.09%20C%2014.058%2038.305%2011.982%2037.792%2011.464%2036.147%20Z%22%20fill%3D%22%23ffffff%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E';
+
 export const StartWhiteIcon = () => {
 	return (
 		<span
@@ -183,5 +186,32 @@ export const UpCurvedLTRArrow = () => {
 				</svg>
 			</svg>
 		</div>
+	);
+};
+
+export const StartRoundedIcon = ({ className }: { className: string }) => {
+	return (
+		<svg
+			xmlns='http://www.w3.org/2000/svg'
+			viewBox='0 0 256 256'
+			focusable='false'
+			color='var(--StartRoundedIcon-color, inherit) /* {"name":"Text Lightest"} */'
+			style={{
+				userSelect: 'none',
+				width: '100%',
+				height: '100%',
+				display: 'inline-block',
+				fill: 'var(--StartRoundedIcon-color, inherit)',
+				flexShrink: 0,
+			}}
+			className={className}
+		>
+			<g
+				color='var(--StartRoundedIcon-color, inherit) /* {"name":"Text Lightest"} */'
+				// weight='fill'
+			>
+				<path d='M128,24A104,104,0,1,0,232,128,104.2,104.2,0,0,0,128,24Zm36.4,110.7-48,32A8.7,8.7,0,0,1,112,168a8.5,8.5,0,0,1-3.8-.9A8,8,0,0,1,104,160V96a8,8,0,0,1,4.2-7.1,8.3,8.3,0,0,1,8.2.4l48,32a8,8,0,0,1,0,13.4Z'></path>
+			</g>
+		</svg>
 	);
 };

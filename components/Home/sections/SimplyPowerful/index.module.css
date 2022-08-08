@@ -1,0 +1,31 @@
+/* width: 100%;
+*/
+
+.mountainContainer1,
+.mountainContainer2,
+.mountainContainer3 {
+	transition: all 0.7s ease-in;
+}
+
+.designSection:hover .mountainContainer2 {
+	width: 40%;
+}
+.designSection:hover .mountainContainer1,
+.designSection:hover .mountainContainer3 {
+	width: 30%;
+}
+
+/* .mountainContainer {} */
+.designSection.iconStart {
+	--StartRoundedIcon-color: rgb(153, 153, 153);
+	color: var(--StartRoundedIcon-color);
+}
+
+.designSection:hover .iconStart * {
+	color: inherit;
+}
+
+.designSection:hover .iconStart {
+	--StartRoundedIcon-color: rgb(14 165 233);
+	color: var(--StartRoundedIcon-color);
+}
